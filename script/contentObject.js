@@ -6,9 +6,23 @@ var dynamicContent = {
 
 			images : [
 				"spring_1.jpg",
-				"spring_2.jpg"
+				"spring_2.jpg",
+				"spring_3.jpg",
+				"spring_4.jpg",
+				"spring_5.jpg",
+				"spring_6.jpg",
+			],
+
+			imageDescription : [
+				"These are some butterflies",
+				"This is a giant mutant chicken",
+				"Spring makeup is always adored",
+				"Flowers blooms in purple and pink",
+				"Sakura covers all over Japan",
+				"Sakura drinks are popular in Japan during Spring",
 			]
 		},
+
 
 		summer : {
 			text : "Summer is the warmest of the four temperate seasons, falling between spring and autumn. At the summer solstice, the days are longest and the nights are shortest, with day-length decreasing as the season progresses after the solstice. The date of the beginning of summer varies according to climate, tradition and culture, but when it is summer in the Northern Hemisphere it is winter in the Southern Hemisphere, and vice versa.",
@@ -17,7 +31,20 @@ var dynamicContent = {
 
 			images : [
 				"summer_1.jpg",
-				"summer_2.jpg"
+				"summer_2.jpg",
+				"summer_3.jpeg",
+				"summer_4.jpg",
+				"summer_5.jpg",
+				"summer_6.jpg",
+
+			],
+			imageDescription : [
+				"It is time for vacation at the beach",
+				"Summer is the time for recovering yourself",
+				"Watermelon drinks are great to keep yourself hydrated",
+				"Be fierceless when it comes to Summer beauty",
+				"Ice-creams always sound the best in the heat",
+				"Fruits are great snacks for the hot days",
 			]
 		},
 
@@ -28,7 +55,19 @@ var dynamicContent = {
 
 			images : [
 				"autumn_1.jpg",
-				"autumn_2.jpg"
+				"autumn_2.jpg",
+				"autumn_3.jpg",
+				"autumn_4.jpg",
+				"autumn_5.jpg",
+				"autumn_6.jpg",
+			],
+			imageDescription : [
+				"Red and yellow leaves are everywhere",
+				"Pumpkin picking is a fun activity",
+				"Warm tones are great makeup look for the fall",
+				"Leaves falling everywhere",
+				"Pumpkin soup and cinnamon rolls sound delicious",
+				"Halloween spirit is also in the air",
 			]
 		},
 
@@ -39,7 +78,20 @@ var dynamicContent = {
 
 			images : [
 				"winter_1.jpg",
-				"winter_2.jpg"
+				"winter_2.jpg",
+				"winter_3.jpg",
+				"winter_4.jpg",
+				"winter_5.jpg",
+				"winter_6.jpg",
+			],
+
+			imageDescription : [
+				"Snow covers the whole town in Winter time",
+				"Building snowman is kids' favorite activity",
+				"Sparkling makeup fits the holiday season",
+				"Baked gingerbread for Christmas",
+				"It is the time for family gathering with nice drinks",
+				"Nobody would forget cookies for Santa",
 			]
 		}
 	};

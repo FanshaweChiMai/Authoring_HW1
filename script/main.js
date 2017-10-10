@@ -24,8 +24,16 @@
           // set the src
           newSubImg.src = "images/" + objectIndex.images[index];
           // add it to the page
+
+          //add some data to the thumbnail
+          newSubImg.dataset.index = index;
+
+          //add some event handling
+          newSubImg.addEventListener('click', function(){ popLightbox(index, objectIndex);}, false);
+
           subImages.appendChild(newSubImg);
         });
+
 
         //remove the colours we applied on the last click
         theSubhead.classList.remove(appliedClass);
@@ -46,4 +54,45 @@
         // add an event handler to each image
         image.addEventListener('click',changeElements, false);
       });
-})();
+
+      //theSubhead,firstChild.nodeValue = dynamicContent['spring'].headline;
+      //theSeasonText.firstChild.nodeValue = dynamicContent['spring'].text;
+      //theHeading.classList.add('spirng');
+
+      //document.querySelector('#spring').click();
+
+      function popLightbox(currentIndex, currentObject){
+        //debugger;
+        let lightbox = document.querySelector('.lightbox');
+
+        //tell window to scroll back to the top so that the lightbox covers the whole thing
+        window.scrollTo(0,0);
+
+        //grab the lightbox elements
+        let lightboxImg = lightbox.querySelector('img');
+        let lightboxDesc = lightbox.querySelector('p');
+        let lightboxClose = lightbox.querySelector('.close-lightbox');
+
+        //put the data in the lightbox elements
+        lightboxImg.src = "images/" + currentObject.images[currentIndex];
+        lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
+
+        lightbox.style.display = "block";
+
+        //wire up the close lightbox button
+        lightboxClose.addEventListener('click', closeLightbox, false);
+
+
+      function closeLightbox() {
+        //debugger;
+        //reset and close the lightbox - empty the contents, reset the image src and the desc text to nothing
+        lightboxImg.src = "";
+        lightboxDesc.innerHTML = "";
+        lightbox.style.display = "none";
+
+
+      }}
+      //more programmy-type way to do the same the same thing
+      changeElements.call(document.querySelector('#spring'));
+})
+();
